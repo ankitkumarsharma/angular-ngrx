@@ -8,3 +8,6 @@ export interface ContactInfoType {
 export interface AppState {
   authData: AuthType
 }
+export interface LoaderType {
+  show: boolean,
+}

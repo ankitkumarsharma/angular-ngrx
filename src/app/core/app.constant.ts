@@ -1,3 +1,4 @@
+export const BASE_URL = "http://xyz.com/xyz";
 export const CONTACT_INFO = [
   {
     name: "Ankit Kumar Sharma",
