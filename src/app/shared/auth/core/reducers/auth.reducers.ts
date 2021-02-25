@@ -26,6 +26,16 @@ const authReducer = createReducer(
       }
     }
   }),
+  // for sample
+  on(authAction.setTodoList,(state, {payload}) =>{
+    return {
+      ...state,
+      loginDetails: {
+        ...state.loginDetails,
+        todoList: payload
+      }
+    }
+  }),
 );
 export function reducer(state: AuthType | undefined, action: Action) {
   return authReducer(state, action);

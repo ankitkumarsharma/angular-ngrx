@@ -1,4 +1,4 @@
-export const BASE_URL = "http://xyz.com/xyz";
+export const BASE_URL = "https://jsonplaceholder.typicode.com";
 export const CONTACT_INFO = [
   {
     name: "Ankit Kumar Sharma",

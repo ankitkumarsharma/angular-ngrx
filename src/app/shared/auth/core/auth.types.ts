@@ -1,19 +1,36 @@
 export interface AuthType {
-  roleDetails: RoleDetails;
+  roleDetails: RoleDetailsType;
   loginDetails: {
-    login?: LoginDetails,
-    mobileOTP?: MobileOTPDetails
+    login?: LoginDetailsType,
+    mobileOTP?: MobileOTPDetailsType,
+    setAccount?: SetAccountType,
+    todoList?: SaveTodoListType[]
   };
 }
-export interface RoleDetails {
+export interface RoleDetailsType {
   role: string;
   designation: string;
 }
-export interface LoginDetails {
+export interface LoginDetailsType {
   user: string;
   password: string;
 }
-export interface MobileOTPDetails {
+export interface MobileOTPDetailsType {
   otp: string;
   password: string;
+}
+export interface SetAccountType {
+  user: string,
+  id: string,
+}
+export interface GetAccountType {
+  user: string,
+  password: string;
+}
+// for sample
+export interface SaveTodoListType {
+  userId: number,
+  id: number,
+  title: string,
+  completed: boolean
 }
