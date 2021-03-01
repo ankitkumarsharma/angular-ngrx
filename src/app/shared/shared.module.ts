@@ -6,13 +6,15 @@ import { sharedEffects } from './auth/core/effects';
 import { StoreModule,  } from '@ngrx/store';
 import { sharedReducer, metaReducers } from './auth/core/reducers';
 import { EffectsModule } from '@ngrx/effects';
+import { LoaderComponent } from './loader/loader.component';
 
 
 
 @NgModule({
   declarations: [
     ContactComponent,
-    LoginComponent
+    LoginComponent,
+    LoaderComponent
   ],
   imports: [
     CommonModule,

@@ -16,13 +16,13 @@ export class HomeComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit(): void {
-    this._store.select("authData","loginDetails","todoList")
-    .pipe(takeUntil(this.unsubscriber))
-    .subscribe((data)=>{
-      console.log(data);
-    })
+    this._store.select("authData", "loginDetails", "todoList")
+      .pipe(takeUntil(this.unsubscriber))
+      .subscribe((data) => {
+        console.log(data);
+      })
   }
-  ngOnDestroy(){
+  ngOnDestroy() {
     this.unsubscriber.next();
     this.unsubscriber.complete();
   }
